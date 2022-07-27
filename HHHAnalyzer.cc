@@ -128,7 +128,7 @@ void HHHAnalyzer::EventLoop(string samplename,const char *isData, const char *is
           bJetIndex.clear();
           FatJetIndex.clear();
           for(int j=0;j<nJet;j++){
-            if(Jet_pt[j]>30 && fabs(Jet_eta[j])<2.5 && Jet_jetId[j]>=4 && Jet_puId[j]>=2){
+            if(Jet_pt[j]>30 && fabs(Jet_eta[j])<2.5 && Jet_jetId[j]>=2 && ((Jet_puId[j]>=4 && Jet_pt[j]<50) || (Jet_pt[j]>50))){
                t_nJet++;
                JetIndex.push_back(j);
                if(Jet_btagDeepFlavB[j]>btag_cut[yearst]){
