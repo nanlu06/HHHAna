@@ -7,7 +7,7 @@ cd CMSSW_10_6_26/src
 
 git clone git@github.com:nanlu06/HHHAna.git
 
-cd HHHAna
+cd HHHAna/HHH6bAna
 
 make
 
